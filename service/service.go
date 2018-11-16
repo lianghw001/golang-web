@@ -25,7 +25,7 @@ func NewServer() *negroni.Negroni {
 }
 
 func initRoutes(mx *mux.Router, formatter *render.Render) {
-
+	//设置访问的路由
 	//当用户使用 http://localhost:8080/Hello-web/username url时，处理的命令
 	mx.HandleFunc("/Hello-web/{id}", testHandler(formatter)).Methods("GET")
 }
