@@ -18,22 +18,25 @@
 
 
 
-- curl 测试
-[参考博客](https://blog.csdn.net/iamlihongwei/article/details/73743278)
+- curl 测试[参考博客](https://blog.csdn.net/iamlihongwei/article/details/73743278)
 
-`curl -v http://localhost:9090/Hello-web/whale`
+`$curl -v http://localhost:9090/Hello-web/whale`
 
 ![curl 测试](https://github.com/lianghw001/golang-web/blob/master/pictures/curl.PNG)
 
 
 
 
-- ab 测试
+- ab 测试[参考博客](https://www.jianshu.com/p/3fd8ac3b937c)
+
+`$ ab -n 1000 -c 100 http://localhost:9090/hello/your`
+
 ![ab 测试](https://github.com/lianghw001/golang-web/blob/master/pictures/abTest.PNG)
 
-`ab -n 1000 -c 100 http://localhost:9090/hello/your`
+  - ab测试分析
+    - flag“-n” 全部请求数
+    - flag“-c” 并发数
 
-[参考博客](https://www.jianshu.com/p/3fd8ac3b937c)
 
 
 - [分析net/http 源码](https://github.com/lianghw001/golang-web/edit/master/README.md)
